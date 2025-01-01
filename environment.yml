@@ -6,14 +6,14 @@ channels:
   - nvidia
 dependencies:
   - python=3.9
-  - datasets=2.10.1
+  - datasets=3.2.0
   - evaluate=0.4.0
   - gensim=4.3.0
   - h5py
   - nltk=3.7
   - numpy=1.22.3
   - pandas
-  - pytorch=1.10.2
+  - pytorch=2.0.1
   - pyyaml
   - sacrebleu=2.0.0
   - scipy=1.7.3
@@ -21,6 +21,7 @@ dependencies:
   - tokenizers=0.11.4
   - torchvision
   - transformers=4.24.0
+  - packaging
   - pip
   - pip:
     - rouge_score
