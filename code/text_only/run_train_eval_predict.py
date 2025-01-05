@@ -399,10 +399,12 @@ def main():
             
         if data_args.prefixtuning is True:            
             raw_datasets = load_dataset("./data/loading_script_prefixtuning",
-                                        data_files=data_files)
+                                        data_files=data_files,
+                                        trust_remote_code=True)
         else:
             raw_datasets = load_dataset("./data/loading_script_noprefixtuning",
-                                        data_files=data_files)
+                                        data_files=data_files,
+                                        trust_remote_code=True)
 #             raw_datasets = load_dataset(
 #                 extension,
 #                 data_files=data_files,
